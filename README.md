@@ -52,7 +52,7 @@ run_imputation.py is used to compute the metrics for the deep imputation methods
 ```
  python run_imputation.py --config config/rectsi/air36.yaml
 ```
-When running experiments for PEMS-BA, PEMS-LA and PEMS-SD datasets, one needs to change the subdataset_name value in config file pems.ymal to 'PEMS-04', 'PEMS-07' and 'PEMS-11' respectively.
+When running experiments for PEMS-BA, PEMS-LA and PEMS-SD datasets, one needs to change the subdataset_name value in config file pems.ymal to `PEMS-04`, `PEMS-07` and `PEMS-11` respectively.
 
 ## Acknowledgement
 This repo is based on the implementations of [GRIN](https://github.com/Graph-Machine-Learning-Group/grin) and [PoGeVon](https://github.com/Derek-Wds/PoGeVon/), thanks for their contribution.
