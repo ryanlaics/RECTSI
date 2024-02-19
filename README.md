@@ -47,7 +47,7 @@ ReCTSi is implemented on three traffic datasets (PeMS-BA, PeMS-LA, and PeMS-SD),
 | PoGeVon  | KDD        | 2023 | https://dl.acm.org/doi/10.1145/3580305.3599444            |
 
 <h2> Run Experiments </h2>
- `run_imputation.py` is used to compute the metrics for the deep imputation methods. An example of usage is
+`run_imputation.py` is used to compute the metrics for the deep imputation methods. An example of usage is
 
 ```
  python run_imputation.py --config config/rectsi/air36.yaml
