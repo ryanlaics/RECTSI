@@ -50,7 +50,7 @@ To run experiments and compute metrics for deep imputation methods, use the `run
 python run_imputation.py --config config/rectsi/air36.yaml
 ```
 
-For experiments with the PEMS datasets, adjust the `subdataset_name` value in the `pems.yaml` configuration file to match the specific dataset (`PEMS-04`,`PEMS-07`,`PEMS-11`).
+For experiments with the PEMS datasets, adjust the `subdataset_name` value in the `pems.yaml` configuration file to match the specific dataset (`PEMS-04` for PeMS-BA,`PEMS-07` for PeMS-LA,`PEMS-11` for PeMS-SD).
 
 ## Acknowledgements
 
