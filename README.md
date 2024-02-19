@@ -1,57 +1,56 @@
-<meta name="robots" content="noindex">
 
-<h1> ReCTSi: Resource-efficient Correlated Time Series Imputation via Decoupled Pattern Learning and Completeness-aware Attentions </h1>
+# ReCTSi: Resource-efficient Correlated Time Series Imputation via Decoupled Pattern Learning and Completeness-aware Attentions
 
-This is the repository of the paper "ReCTSi: Resource-efficient Correlated Time Series Imputation via Decoupled Pattern Learning and Completeness-aware Attentions", encompassing the code, datasets, and supplemental material.
+Welcome to the official repository for the paper "ReCTSi: Resource-efficient Correlated Time Series Imputation via Decoupled Pattern Learning and Completeness-aware Attentions." This repository contains the necessary code, datasets, and supplemental material related to the paper.
 
-<h1> Supplemental Material </h1> 
+## Supplemental Material
 
-Detailed time and space complexity analysis, implementation details, and ablation study on other datasets can be found at the [Appendix](Appendix.pdf) (downloading to local pdf viewer is recommended for better readability).
+For additional insights into our work, including detailed time and space complexity analysis, implementation details, and the ablation study on other datasets, please refer to the [Supplemental Material](Appendix.pdf). We recommend downloading the document for enhanced readability.
 
- <br>
- <br>
+## Code and Datasets
 
-  
+### Setting Up the Environment
 
-<h1> Code and Datasets </h1> 
+To set up the required experimental environment, we recommend using Anaconda. Create and activate an environment with the following commands:
 
-<h2> Requirements </h2> 
-
-To install the experimental environment, please use Anaconda, and create an environment by:
-```setup
+```bash
+# Create the environment
 conda env create -f conda_env.yml
-```
 
-Then, activate the environment by:
-
-```activate the environment
+# Activate the environment
 conda activate rectsi
 ```
 
+### Datasets
 
-<h2> Datasets </h2> 
+We have implemented ReCTSi using several datasets, including traffic datasets (PeMS-BA, PeMS-LA, and PeMS-SD), an air quality dataset (AQ36), and an infection case dataset (COVID-19).
 
-ReCTSi is implemented on three traffic datasets (PeMS-BA, PeMS-LA, and PeMS-SD), an air quality dataset (AQ36), and an infection case dataset (COVID-19).
+Download the datasets from [Google Drive](https://drive.google.com/file/d/1kmY2MMlga1ryasGsAHXslKNI3F2l19IT/) (courtesy of [PoGeVon](https://github.com/Derek-Wds/PoGeVon/) from KDD 2023). After downloading, unzip and move them into the `dataset` folder at the root of this repository.
 
-- **PEMS04**, **PEMS08**, **METR-LA**, and **PEMS-BAY** can be downloaded in [Google Drive](https://drive.google.com/file/d/1kmY2MMlga1ryasGsAHXslKNI3F2l19IT/) (This is provided by [PoGeVon](https://github.com/Derek-Wds/PoGeVon/) (KDD 2023)). After downloading and unzipping the datasets, please move them into the `dataset` folder under the root of this repo.
-<h2> DL-based Baselines </h2> 
+### Deep Learning-based Baselines
 
-| Model    | Conference | Year | Link                                                  |
-|----------|------------|------|-------------------------------------------------------|
-| BRITS    | NeurIPS    | 2018 | https://dl.acm.org/doi/10.5555/3327757.3327783               |
-| rGAIN    | AAAI       | 2021 | https://ojs.aaai.org/index.php/AAAI/article/view/17086        |
-| SAITS    | ESWA       | 2022 | https://www.sciencedirect.com/science/article/pii/S0957417423001203    |
-| TimesNet | ICLR       | 2022 | https://openreview.net/pdf?id=ju_Uqw384Oq    |
-| GRIN     | ICLR       | 2022 | https://openreview.net/pdf?id=kOu3-S3wJ7       |
-| NET^3^   | WWW        | 2021 | https://dl.acm.org/doi/10.1145/3442381.3449969 |
-| PoGeVon  | KDD        | 2023 | https://dl.acm.org/doi/10.1145/3580305.3599444            |
+Below is a table of DL-based baseline models for comparison:
 
-<h2> Run Experiments </h2>
-To run experiments and compute metrics, use the `run_imputation.py` script. Here's an example command:
+| Model    | Venue   | Year | Link                                                  |
+|----------|---------|------|-------------------------------------------------------|
+| BRITS    | NeurIPS | 2018 | [Link](https://dl.acm.org/doi/10.5555/3327757.3327783)               |
+| rGAIN    | AAAI    | 2021 | [Link](https://ojs.aaai.org/index.php/AAAI/article/view/17086)        |
+| SAITS    | ESWA    | 2022 | [Link](https://www.sciencedirect.com/science/article/pii/S0957417423001203)    |
+| TimesNet | ICLR    | 2022 | [Link](https://openreview.net/pdf?id=ju_Uqw384Oq)    |
+| GRIN     | ICLR    | 2022 | [Link](https://openreview.net/pdf?id=kOu3-S3wJ7)       |
+| NET<sup>3</sup>   | WWW     | 2021 | [Link](https://dl.acm.org/doi/10.1145/3442381.3449969) |
+| PoGeVon  | KDD     | 2023 | [Link](https://dl.acm.org/doi/10.1145/3580305.3599444)            |
+
+### Running Experiments
+
+To run experiments and compute metrics for deep imputation methods, use the `run_imputation.py` script. Here's an example command:
+
+```bash
+python run_imputation.py --config config/rectsi/air36.yaml
 ```
- python run_imputation.py --config config/rectsi/air36.yaml
-```
-When running experiments for PEMS-BA, PEMS-LA and PEMS-SD datasets, one needs to change the subdataset_name value in config file pems.ymal to `PEMS-04`, `PEMS-07` and `PEMS-11` respectively.
 
-## Acknowledgement
-This repo is based on the implementations of [GRIN](https://github.com/Graph-Machine-Learning-Group/grin) and [PoGeVon](https://github.com/Derek-Wds/PoGeVon/), thanks for their contribution.
+For experiments with the PEMS datasets, adjust the `subdataset_name` value in the `pems.yaml` configuration file to match the specific dataset ('PEMS-04',`PEMS-07',`PEMS-11').
+
+## Acknowledgements
+
+This project builds upon the work of [GRIN](https://github.com/Graph-Machine-Learning-Group/grin) and [PoGeVon](https://github.com/Derek-Wds/PoGeVon/). We extend our gratitude to their contributions to the field.
