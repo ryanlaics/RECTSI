@@ -1,0 +1,21 @@
+name: rectsi
+channels:
+  - defaults
+  - pytorch
+  - conda-forge
+dependencies:
+  - pip
+  - pytables
+  - python=3.8
+  - wheel
+  - pip:
+      - einops
+      - fancyimpute==0.6
+      - h5py
+      - openpyxl
+      - pandas
+#      - pytorch-lightning==1.4
+      - pyyaml
+      - scikit-learn
+      - scipy
+      - tensorboard
