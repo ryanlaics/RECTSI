@@ -52,4 +52,4 @@ For experiments with the PEMS datasets, adjust the `subdataset_name` value in th
 
 ## Acknowledgements
 
-This project builds upon the work of [GRIN](https://github.com/Graph-Machine-Learning-Group/grin) and [PoGeVon](https://github.com/Derek-Wds/PoGeVon/). We extend our gratitude to their contributions to the field.
+This code builds upon the implementations of [GRIN](https://github.com/Graph-Machine-Learning-Group/grin) and [PoGeVon](https://github.com/Derek-Wds/PoGeVon/). We extend our gratitude to their contributions to the field.
