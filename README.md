@@ -30,8 +30,6 @@ Download the datasets from [Google Drive](https://drive.google.com/file/d/1kmY2M
 
 ### Deep Learning-based Baselines
 
-Below is a table of DL-based baseline models for comparison:
-
 | Model    | Venue   | Year | Link                                                  |
 |----------|---------|------|-------------------------------------------------------|
 | BRITS    | NeurIPS | 2018 | [Link](https://dl.acm.org/doi/10.5555/3327757.3327783)               |
