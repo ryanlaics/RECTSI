@@ -43,13 +43,13 @@ Below is a table of DL-based baseline models for comparison:
 
 ### Running Experiments
 
-To run experiments and compute metrics for deep imputation methods, use the `run_imputation.py` script. Here's an example command:
+To run experiments and compute metrics for deep imputation methods, use the `run_imputation.py` script. Here`s an example command:
 
 ```bash
 python run_imputation.py --config config/rectsi/air36.yaml
 ```
 
-For experiments with the PEMS datasets, adjust the `subdataset_name` value in the `pems.yaml` configuration file to match the specific dataset ('PEMS-04',`PEMS-07',`PEMS-11').
+For experiments with the PEMS datasets, adjust the `subdataset_name` value in the `pems.yaml` configuration file to match the specific dataset (`PEMS-04`,`PEMS-07`,`PEMS-11`).
 
 ## Acknowledgements
 
