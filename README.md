@@ -2,11 +2,11 @@
 
 <h1> ReCTSi: Resource-efficient Correlated Time Series Imputation via Decoupled Pattern Learning and Completeness-aware Attentions </h1>
 
-This is the repository of the paper entitled "ReCTSi: Resource-efficient Correlated Time Series Imputation via Decoupled Pattern Learning and Completeness-aware Attentions", encompassing the code, datasets, and supplemental material.
+This is the repository of the paper "ReCTSi: Resource-efficient Correlated Time Series Imputation via Decoupled Pattern Learning and Completeness-aware Attentions", encompassing the code, datasets, and supplemental material.
 
 <h1> Supplemental Material </h1> 
 
-Detailed time and space complexity analysis, implementation details, and ablation study on other datasets can be found at the [Supplemental Material](Appendix.pdf) (downloading to local pdf viewer is recommended for better readability).
+Detailed time and space complexity analysis, implementation details, and ablation study on other datasets can be found at the [Appendix](Appendix.pdf) (downloading to local pdf viewer is recommended for better readability).
 
  <br>
  <br>
