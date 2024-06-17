@@ -1,12 +1,9 @@
 
 # ReCTSi: Resource-efficient Correlated Time Series Imputation via Decoupled Pattern Learning and Completeness-aware Attentions
 
-Welcome to the anonymous repository for the paper "ReCTSi: Resource-efficient Correlated Time Series Imputation via Decoupled Pattern Learning and Completeness-aware Attentions," currently under review for KDD 2024. This repository provides access to the code, datasets, and the appendix associated with our submission.
+Welcome to the repository for the paper "ReCTSi: Resource-efficient Correlated Time Series Imputation via Decoupled Pattern Learning and Completeness-aware Attentions". This repository provides access to the code, and datasets associated with our submission. 
 
-## Appendix
-
-Detailed time and space complexity analysis, implementation details, and ablation study on other datasets can be found at the [Appendix](Appendix.pdf) (downloading to local pdf viewer is recommended for better readability).
-
+This is currently a preliminary release of an informal draft version, which may have minor differences or issues. The official version will be released soon.
 
 ## Code and Datasets
 
@@ -45,7 +42,7 @@ Download the datasets from [Google Drive](https://drive.google.com/file/d/1kmY2M
 To run experiments and compute metrics for deep imputation methods, use the `run_imputation.py` script. Here`s an example command:
 
 ```bash
-python run_imputation.py --config config/rectsi/air36.yaml
+python run_imputation.py
 ```
 
 For experiments with the PEMS datasets, adjust the `subdataset_name` value in the `pems.yaml` configuration file to match the specific dataset (`PEMS-04` for PeMS-BA,`PEMS-07` for PeMS-LA,`PEMS-11` for PeMS-SD).
